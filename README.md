@@ -2,16 +2,16 @@
 
 Python code for the paper "Political districting to minimize county splits" by Maral Shahmizad and Austin Buchanan.
 
-We consider a stylized redistricting problem. The task is to divide a state into k contiguous districts, each having a population between L and U, such that the number of county splits is minimum. 
+We consider a stylized redistricting problem. The task is to divide a state into $k$ contiguous districts, each having a population between $L$ and $U$, such that the number of county splits is minimum. 
 
 Our overall approach has three steps:
-1. Cluster. Partition the counties into a maximum number of county clusters (C_1, C_2, ..., C_q) with associated cluster sizes (k_1, k_2, ..., k_q). If there are multiple such clusterings, pick one that is compact (i.e., few cut edges).
-2. Sketch. For each cluster C_j, sketch a districting plan for it that has k_j districts and k_j-1 county splits. A sketch indicates what proportion of each county is assigned to each district. 
-3. Detail. For each cluster C_j, find a detailed districting plan that abides by the sketch's support. That is, a tract (or block) is permitted in district j only if its county is (partially) assigned to district j in the sketch.
+1. Cluster. Partition the counties into a maximum number of county clusters $(C_1, C_2, \dots, C_q)$ with associated cluster sizes $(k_1, k_2, \dots, k_q)$. If there are multiple such clusterings, pick one that is compact (i.e., few cut edges).
+2. Sketch. For each cluster $C_j$, sketch a districting plan for it that has $k_j$ districts and $k_j-1$ county splits. A sketch indicates what proportion of each county is assigned to each district. 
+3. Detail. For each cluster $C_j$, find a detailed districting plan that abides by the sketch's support. That is, a tract (or block) is permitted in district $j$ only if its county is (partially) assigned to district $j$ in the sketch.
 
 We solve each step using integer programming techniques. If the Cluster step is successful, then weak split duality implies that at least k-q county splits are required (Theorem 1). If the Sketch and Detail steps are successful, then we obtain a districting plan with k-q splits. So, if all three steps are successful, we conclude that k-q is the minimum number of county splits. 
 
-This is illustrated for the Tennessee's k=33 State Senate districts below. First, the Cluster step partitions Tennessee's 95 counties into a maximum number of county clusters; there are 20 clusters. By weak split duality, the minimum number of county splits is at least 33 - 20 = 13. Second, the Sketch step determines what proportion of each county is assigned to each district (see pie charts), so that clusters of size k' are carved up using k'-1 county splits. Third, the Detail step takes the district sketches and finds a detailed districting plan with 13 splits. So, we have bounded the minimum number of splits between 13 and 13, so 13 is optimal.
+This is illustrated for the Tennessee's $k=33$ State Senate districts below. First, the Cluster step partitions Tennessee's 95 counties into a maximum number of county clusters; there are 20 clusters. By weak split duality, the minimum number of county splits is at least $33 - 20 = 13$. Second, the Sketch step determines what proportion of each county is assigned to each district (see pie charts), so that clusters of size $k'$ are carved up using $k'-1$ county splits. Third, the Detail step takes the district sketches and finds a detailed districting plan with 13 splits. So, we have bounded the minimum number of splits between 13 and 13, so 13 is optimal.
 
 ![Figure 1](TN_SS_1.png?raw=true "Cluster")
 ![Figure 2](TN_SS_2.png?raw=true "Sketch")
@@ -19,7 +19,7 @@ This is illustrated for the Tennessee's k=33 State Senate districts below. First
 
 ## Cluster and Detail Results
 
-We solve the minimum county splits problem for all congressional, state senate, and state house instances across the USA. For each instance, we identify the maximum number of county clusters (which gives a lower bound on the number of county splits), then we find a districting plan with the same number of splits, thus proving optimality in terms of splits. All experiments use the P.L. 94-171 data from the 2020 Census. Note that [some states adjust their census data](https://redistrictingdatahub.org/data/ongoing-data-projects/states-that-adjust-the-census-data-for-redistricting/) when creating their districting plans.
+We solve the minimum county splits problem for all congressional, state senate, and state house instances across the USA. For each instance, we identify the maximum number of county clusters (which gives a lower bound on the number of county splits), then we find a districting plan with the same number of splits, thus proving optimality in terms of splits. All experiments use the P.L. 94-171 data from the 2020 Census. Note that [some states adjust their census data](https://redistrictingdatahub.org/data/ongoing-data-projects/states-that-adjust-the-census-data-for-redistricting/) when creating their districting plans. We impose a 1% (+/-0.5%) deviation for congressional instances and a 10\% (+/-5%) deviation for legislative instances.
 
 We do not provide results for Hawaii given that it is a collection of islands, and contiguity is far from attainable.
 
