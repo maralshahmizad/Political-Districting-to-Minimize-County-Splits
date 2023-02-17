@@ -4,6 +4,9 @@ Python code for the paper "Political districting to minimize county splits" by M
 
 We consider a stylized redistricting problem. The task is to divide a state into $k$ contiguous districts each having a population between $L$ and $U$ such that the number of county splits is minimum. 
 
+## Approach
+
+
 Our overall approach has three steps:
 1. Cluster. Partition the counties into a maximum number of county clusters $(C_1, C_2, \dots, C_q)$ with associated cluster sizes $(k_1, k_2, \dots, k_q)$. If there are multiple such clusterings, pick one that is compact (i.e., few cut edges).
 2. Sketch. For each cluster $C_j$, sketch a districting plan for it that has $k_j$ districts and $k_j-1$ county splits. A sketch indicates what proportion of each county is assigned to each district. 
