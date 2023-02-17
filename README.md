@@ -1,4 +1,4 @@
-# Political-Districting-to-Minimize-County-Splits
+# Political Districting to Minimize County Splits
 
 Python code for the paper "Political districting to minimize county splits" by Maral Shahmizad and Austin Buchanan.
 
