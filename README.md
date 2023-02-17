@@ -1,7 +1,7 @@
 # Political-Districting-to-Minimize-County-Splits
 
 
-| **State** | **Congeress** | **Senate**|**House**|
+| **State** | **Congress** | **Senate**|**House**|
 |----------|----------|----------|----------|
 | **AL** |<table><tr><td>[Cluster](https://github.com/maralshahmizad/Political-Districting-to-Minimize-County-Splits/blob/main/cluster_png/AL_CD_clusters.png)</td><td>[Map](https://davesredistricting.org/maps#viewmap::5f5927ab-5718-4cce-a2bb-8f62799bb133)</td></tr></table> | <table><tr><td>[Cluster](https://github.com/maralshahmizad/Political-Districting-to-Minimize-County-Splits/blob/main/cluster_png/AL_SS_clusters.png)</td><td>[Map](https://davesredistricting.org/maps#viewmap::5525924a-ba7b-4af2-b45a-4a160d45615b)</td></tr></table>|<table><tr><td> [Cluster](https://github.com/maralshahmizad/Political-Districting-to-Minimize-County-Splits/blob/main/cluster_png/AL_SH_clusters.png)</td><td>[Map](https://davesredistricting.org/maps#viewmap::067c80c8-a329-46b3-bb24-b63e71ae1243)</td></tr></table>|
 | **AK** || <table><tr><td>[Cluster](https://github.com/maralshahmizad/Political-Districting-to-Minimize-County-Splits/blob/main/cluster_png/AK_SS_clusters.png)</td><td>[Map](https://davesredistricting.org/maps#viewmap::ab47dbf3-00b8-40a5-bb04-84a42d4742d5)</td></tr></table>|<table><tr><td> [Cluster](https://github.com/maralshahmizad/Political-Districting-to-Minimize-County-Splits/blob/main/cluster_png/AK_SH_clusters.png)</td><td>[Map](https://davesredistricting.org/join/d59777ff-b703-4196-9547-b375550a8979)</td></tr></table>|
