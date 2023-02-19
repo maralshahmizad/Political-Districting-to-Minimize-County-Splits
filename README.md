@@ -4,6 +4,8 @@ Python code for the paper "Political districting to minimize county splits" by M
 
 We consider a stylized redistricting problem. The task is to divide a state into $k$ contiguous districts each having a population between $L$ and $U$ such that the number of county splits is minimum. 
 
+Tables near the end of the paper show the minimum number of splits versus the enacted splits for each state and district type (congressional, state senate, state house).
+
 ## Approach
 
 
