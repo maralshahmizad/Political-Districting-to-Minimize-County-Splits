@@ -116,4 +116,11 @@ def get_state(fips):
     assert fips in states.keys()
     return states[fips]['abbr']
     
+def get_fips(state):
+    for code in states.keys():
+        if states[code]['abbr'] == state:
+            return code
+    assert False # this shouldn't happen
+    return None
+    
         
