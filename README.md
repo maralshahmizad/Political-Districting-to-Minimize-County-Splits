@@ -1,6 +1,6 @@
 # Political Districting to Minimize County Splits
 
-Python code for the [paper](https://github.com/maralshahmizad/Political-Districting-to-Minimize-County-Splits/blob/main/Political_districting_to_minimize_county_splits_OO_format.pdf) "Political districting to minimize county splits" by Maral Shahmizad and Austin Buchanan. Also [available on Optimization-Online](https://optimization-online.org/2023/02/political-districting-to-minimize-county-splits/).
+Python code for the [paper](https://github.com/maralshahmizad/Political-Districting-to-Minimize-County-Splits/blob/main/Political_districting_to_minimize_county_splits_OO_format.pdf) "Political districting to minimize county splits" by Maral Shahmizad and Austin Buchanan. Also [available on Optimization-Online](https://optimization-online.org/2023/02/political-districting-to-minimize-county-splits/). [Slides are also available](https://austinlbuchanan.github.io/files/Political_districting_to_minimize_county_splits_slides.pdf).
 
 We consider a stylized redistricting problem. The task is to divide a state into $k$ contiguous districts each having a population between $L$ and $U$ such that the number of county splits is minimum. 
 
